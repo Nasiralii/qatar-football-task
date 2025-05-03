@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Applab - Tailwind CDN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-white text-center text-gray-800">
+  <!-- <header class="bg-blue-600 text-white py-4">
+      <h1 class="text-6xl font-bold">Welcome to Applab</h1>
+    </header> -->
+  <main>
+
+    <section id="hero" class="relative lg:h-[855px] bg-cover bg-center bg-[url('./images/banner.svg')]">
+      <!-- <img src="./images/banner.svg" alt="Hero Background" class="w-full left-0 right-0 h-full z-[-5] absolute"> -->
+      <nav class="bg-[#2f1a45] text-white z-[99]" style="z-index: 9999;">
+        <div
+          class="md:px-6 p-2 container mx-auto border-b border-[#6d5f7d] py-5 flex flex-wrap justify-between items-center">
+          <div class="w-[151px] h-[50px] bg-[#d9d9d9]"></div>
+          <button id="menu-btn" class="lg:hidden relative z-20 text-white focus:outline-none cursor-pointer">
+            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+              </path>
+            </svg>
+          </button>
+          <div id="menu"
+            class="lg:block hidden w-full lg:w-auto lg:mt-0 mt-0 lg:flex lg:flex-row lg:items-center gap-6 lg:gap-x-[32px]">
+            <div class="relative border border-gray-500 rounded-full w-full lg:w-auto my-4 lg:my-0">
+              <svg class="absolute ml-3 lg:top-1/2 transform -translate-y-1/2 h-6 w-6 text-gray-300"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+              </svg>
+              <input placeholder="Search"
+                class="bg-[#443158] w-full lg:w-auto pl-12 px-4 py-2 rounded-full text-white focus:outline-none">
+            </div>
+            <div class="flex items-center gap-2 my-3 lg:my-0">
+              <img src="./images/globe.svg" alt="globe" class="w-5 h-5">
+              <select class="appearance-none bg-[#2f1a45] text-white py-2 rounded-md cursor-pointer">
+                <option value="ar" selected="">AR</option>
+                <option value="en">EN</option>
+                <option value="ur">UR</option>
+              </select>
+            </div>
+            <div
+              class="flex justify-center px-3 items-center gap-2 bg-[url('./images/ticket.png')] bg-cover bg-center w-[133px] h-[44px] cursor-pointer my-3 lg:my-0">
+              <img src="./images/ticket.svg" alt="ticket1">
+              <hr class="border-l border-2 border-[#2F1A45] h-full border-dashed">
+            </div>
+          </div>
+        </div>
+        <div id="nav-links"
+          class="hidden lg:flex flex-col lg:flex-row py-2 md:px-6 px-2 container mx-auto justify-between">
+          <div class="flex flex-wrap flex-col lg:flex-row items-center gap-2 xl:text-base lg:text-[13px] xl:gap-x-[24px]">
+
+            <p class="cursor-pointer">National Team</p>
+            <p class="cursor-pointer">Competitions</p>
+            <p class="cursor-pointer">Football in Qatar</p>
+
+            <!-- Regulation Dropdown -->
+            <div class="relative group dropdown-container">
+              <div class="flex items-center cursor-pointer py-2 transition-colors duration-200 rounded-md">
+                <span class="relative inline-block pr-1">Regulation</span>
+                <svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180 dropdown-icon"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+
+              <div
+                class="dropdown-content md:absolute left-0 top-full mt-1 hidden group-hover:block lg:group-hover:block bg-[#3d2358] min-w-[150px] rounded-md shadow-lg py-1 z-50 transition-all duration-300 opacity-0 group-hover:opacity-100 transform -translate-y-2 group-hover:translate-y-0">
+                <a href="#" class="block px-4 py-2 hover:bg-[#4d2d6a] transition-colors duration-150">Press
+                  Releases</a>
+                <a href="#" class="block px-4 py-2 hover:bg-[#4d2d6a] transition-colors duration-150">Gallery</a>
+              </div>
+            </div>
+
+            <!-- About Us Dropdown -->
+            <div class="relative group dropdown-container">
+              <div class="flex items-center cursor-pointer py-2 transition-colors duration-200 rounded-md">
+                <span class="relative inline-block pr-1">About Us</span>
+                <svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180 dropdown-icon"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+
+              <div
+                class="dropdown-content md:absolute left-0 top-full mt-1 hidden group-hover:block lg:group-hover:block bg-[#3d2358] min-w-[150px] rounded-md shadow-lg py-1 z-50 transition-all duration-300 opacity-0 group-hover:opacity-100 transform -translate-y-2 group-hover:translate-y-0">
+                <a href="#" class="block px-4 py-2 hover:bg-[#4d2d6a] transition-colors duration-150">News</a>
+                <a href="#" class="block px-4 py-2 hover:bg-[#4d2d6a] transition-colors duration-150">Press
+                  Releases</a>
+                <a href="#" class="block px-4 py-2 hover:bg-[#4d2d6a] transition-colors duration-150">Gallery</a>
+              </div>
+            </div>
+
+            <p class="cursor-pointer">Football Development</p>
+
+            <!-- Media Centers Dropdown -->
+            <div class="relative group dropdown-container">
+              <div class="flex items-center cursor-pointer py-2 transition-colors duration-200 rounded-md">
+                <span class="relative inline-block pr-1">Media Centers</span>
+                <svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180 dropdown-icon"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+
+              <div
+                class="dropdown-content md:absolute left-0 top-full mt-1 hidden group-hover:block lg:group-hover:block bg-[#3d2358] min-w-[150px] rounded-md shadow-lg py-1 z-50 transition-all duration-300 opacity-0 group-hover:opacity-100 transform -translate-y-2 group-hover:translate-y-0">
+                <a href="#" class="block px-4 py-2 hover:bg-[#4d2d6a] transition-colors duration-150">News</a>
+                <a href="#" class="block px-4 py-2 hover:bg-[#4d2d6a] transition-colors duration-150">Press
+                  Releases</a>
+                <a href="#" class="block px-4 py-2 hover:bg-[#4d2d6a] transition-colors duration-150">Gallery</a>
+              </div>
+            </div>
+
+            <p class="cursor-pointer">Tenders</p>
+            <p class="cursor-pointer">Referees</p>
+          </div>
+          <div class="flex items-center gap-2 cursor-pointer">
+            <img src="./images/contactus.svg" alt="contact us" class="w-5 h-5">
+            <p class="inline-block">Contact Us</p>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu"
+          class="lg:hidden fixed inset-0 bg-[#2f1a45] z-10 hidden flex-col text-start pt-20 px-4 h-full overflow-y-auto">
+          <div class="py-4 border-b border-[#6d5f7d]">
+            <p class="text-lg pb-4 mt-4 border-b border-[#6d5f7d]">National Team</p>
+            <p class="text-lg pb-4 mt-4 border-b border-[#6d5f7d]">Competitions</p>
+            <p class="text-lg pb-2 mt-4 border-[#6d5f7d]">Football in Qatar</p>
+          </div>
+
+          <!-- Mobile Regulation Dropdown -->
+          <div class="py-2 border-b border-[#6d5f7d]">
+            <div class="mobile-dropdown-toggle flex justify-between items-center">
+              <p class="text-lg py-2">Regulation</p>
+              <svg class="w-5 h-5 mobile-dropdown-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="mobile-dropdown-content hidden pl-4 mt-2">
+              <a href="#" class="block py-2">Press Releases</a>
+              <a href="#" class="block py-2">Gallery</a>
+            </div>
+          </div>
+
+          <!-- Mobile About Us Dropdown -->
+          <div class="py-2 border-b border-[#6d5f7d]">
+            <div class="mobile-dropdown-toggle flex justify-between items-center">
+              <p class="text-lg py-2">About Us</p>
+              <svg class="w-5 h-5 mobile-dropdown-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="mobile-dropdown-content hidden pl-4 mt-2">
+              <a href="#" class="block py-2">News</a>
+              <a href="#" class="block py-2">Press Releases</a>
+              <a href="#" class="block py-2">Gallery</a>
+            </div>
+          </div>
+
+          <div class="py-2 border-b border-[#6d5f7d]">
+            <p class="text-lg py-2">Football Development</p>
+          </div>
+
+          <!-- Mobile Media Centers Dropdown -->
+          <div class="py-2 border-b border-[#6d5f7d]">
+            <div class="mobile-dropdown-toggle flex justify-between items-center">
+              <p class="text-lg py-2">Media Centers</p>
+              <svg class="w-5 h-5 mobile-dropdown-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            <div class="mobile-dropdown-content hidden pl-4 mt-2">
+              <a href="#" class="block py-2">News</a>
+              <a href="#" class="block py-2">Press Releases</a>
+              <a href="#" class="block py-2">Gallery</a>
+            </div>
+          </div>
+
+          <div class="py-2 border-b border-[#6d5f7d]">
+            <p class="text-lg py-2">Tenders</p>
+          </div>
+
+          <div class="py-2">
+            <p class="text-lg py-2">Referees</p>
+          </div>
+
+          <div class="py-4 mt-4 flex items-center gap-2">
+            <img src="./images/contactus.svg" alt="contact us" class="w-6 h-6">
+            <p class="text-lg">Contact Us</p>
+          </div>
+        </div>
+      </nav>
+      <div class="relative w-full container xl:pt-72 lg:pt-56 pt-36 md:px-6 px-2 mx-auto flex justify-center items-center">
+        <div class="text-start md:w-1/2 flex flex-col justify-center text-white  rounded-lg">
+          <p class="font-bold text-3xl">01-<span class="text-[#af4f64]">05</span></p>
+          <p class="text-3xl lg:text-5xl xl:text-7xl font-bold">WE ARE</p>
+          <p class="text-3xl lg:text-5xl xl:text-7xl font-bold">THE <span class="text-[#ffb92e]">CHAMPIONS</span></p>
+          <p class="text-xl mt-2 font-thin">
+            Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor pulvinar orci elementum nulla nunc. A
+            diam
+            quam et at viverra et.
+          </p>
+          <div class="flex lg:pb-auto pb-8 flex-row items-center gap-2 flex-wrap md:gap-10 font-thin py-4">
+            <div class="flex items-center gap-x-[15px] cursor-pointer">
+              <img class="cursor-pointer hover:scale-110 transition-all" src="./images/fixture.svg" alt="fixtures">
+              <p class="md:text-lg">Fixtures</p>
+            </div>
+            <div class="flex items-center gap-x-[15px] cursor-pointer">
+              <img class="cursor-pointer hover:scale-110 transition-all" src="./images/live-score.svg" alt="livescore">
+              <p class="md:text-lg">Live Score</p>
+            </div>
+            <div class="flex items-center gap-x-[15px] cursor-pointer">
+              <img class="cursor-pointer hover:scale-110 transition-all" src="./images/statistics.svg" alt="statistics">
+              <p class="md:text-lg">Statistics</p>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2"></div>
+        <div class="absolute bottom-2 right-2 md:right-[60px] top-5 flex flex-row flex-col gap-2">
+          <img class="cursor-pointer cursor-pointer hover:scale-105 transition-all" src="./images/instagram.svg"
+            alt="insta.png">
+          <img class="cursor-pointer hover:scale-105 transition-all" src="./images/youtube.svg" alt="yt.png">
+          <img class="cursor-pointer cursor-pointer hover:scale-105 transition-all" src="./images/facebook.svg"
+            alt="fb.png">
+          <img class="cursor-pointer cursor-pointer hover:scale-105 transition-all" src="./images/twitter.svg"
+            alt="twitter.png">
+        </div>
+      </div>
+
+
+    </section>
+    <div class="relative container bg-white relative -top-5 mx-auto overflow-hidden w-full pt-2 pb-8 bg-gray-100 rounded mb-8">
+      <div id="marquee" class="absolute whitespace-nowrap flex gap-8 will-change-transform">
+        <img src="./images/footbase-qatar.svg" class="h-6" />
+        <img src="./images/football.svg" class="h-6" />
+        <img src="./images/football1.svg" class="h-6" />
+        <img src="./images/football2.svg" class="h-6" />
+        <img src="./images/football.svg" class="h-6" />
+        <img src="./images/football1.svg" class="h-6" />
+        <img src="./images/football2.svg" class="h-6" />
+        <img src="./images/footbase-qatar.svg" class="h-6" />
+        <img src="./images/football.svg" class="h-6" />
+        <img src="./images/football1.svg" class="h-6" />
+        <img src="./images/football2.svg" class="h-6" />
+        <img src="./images/footbase-qatar.svg" class="h-6" />
+        <img src="./images/football.svg" class="h-6" />
+        <img src="./images/football1.svg" class="h-6" />
+        <img src="./images/football2.svg" class="h-6" />
+      </div>
+    </div>
+
+    <h1 class="text-3xl md:px-6 px-2 container mx-auto lg:text-5xl text-start font-bold">
+      <span class="text-outline text-outline text-white">LIVE</span>
+      <span class="text-[#2f1a45]">MATCHES</span>
+    </h1>
+    <div class="flex md:px-6 px-2 container mx-auto flex-wrap gap-y-2 py-4 justify-between">
+      <div class="border p-1 bg-[#FBFBFB] border-[#D2D2D2] rounded-xl">
+      <button  id="national-content"
+        class="bg-[#2f1a45] rounded-xl py-3 md:px-6 px-2 text-white text-xs md:text-base font-semibold lg:font-bold">
+        NATIONAL TEAM
+      </button>
+      <button id="other-content"
+        class="py-3 md:px-6 px-2 text-[#958ba0] rounded-xl text-xs md:text-base font-semibold lg:font-bold">
+        OTHER MATCHES
+      </button>
+      </div>
+      <div class="flex items-center gap-x-4">
+        <button  id="match-prev-btn"
+          class="w-10 h-10 flex items-center justify-center border-2 border-[#8c0321] text-[#8c0321] rounded-full text-xl font-bold">
+          <img src="./images/left-arrow.svg" alt="left">
+        </button>
+        <button id="match-next-btn"
+          class="w-10 h-10 flex items-center justify-center border-2 bg-[#8c0321] border-[#8c0321] text-white rounded-full text-xl font-bold">
+          <img src="./images/right-arrow.svg" alt="right">
+        </button>
+      </div>
+    </div>
+    
+    <div class="container mx-auto"  id="national-content">
+      <div class="carousel-container mt-5 md:px-6 px-2 relative">
+        <div id="match-carousel-track" class="flex transition-transform duration-300">
+          <div class="match-card relative group w-full">
+            <div class="relative w-full md:h-[270px] rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('./images/matchcard2.svg')] transition-all duration-500 ease-in-out">
+              </div>
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('https://uzairkhan-12.github.io/applab-task/images/matchCard222.png')] translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+              </div>
+              <div
+                class="absolute inset-0 border-2 border-[#6D5F7D] opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-in-out rounded-lg pointer-events-none z-10">
+              </div>
+    
+              <!-- Card content -->
+              <div class="relative z-20">
+                <div
+                  class="bg-white mx-auto border-t border-[#2F1A45] px-2 w w-[176px] bg-red-500 h-[32px] flex gap-x-1 items-center rounded-b-lg">
+                  <img src="./images/calendar.svg" alt="Calendar">
+                  <p class="text-black text-sm font-thin"> Saturday, May 12th</p>
+                </div>
+                <div class="flex mt-5 mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <img src="./images/umm.svg" alt="Team 1">
+                  <p class="min-h-10 min-w-10 flex items-center justify-center rounded-full text-red-500 bg-white">
+                    VS</p>
+                  <img src="./images/duhail.svg" alt="Team 2">
+                </div>
+                <div
+                  class="flex text-black font-bold group-hover:text-white mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <p>Umm Salal SC</p>
+                  <p>Al-Duhail SC</p>
+                </div>
+                <div class="flex mt-6 pt-6 md:pb-0 pb-2 text-black gap-x-2 mt-2 text-black items-center justify-center">
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">10</p>
+                  <p>:</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">00</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2">PM</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Ticket image moved outside the card but still part of the group -->
+            <div
+              class="opacity-0 justify-center mx-auto flex mt-4 translate-y-[-20%] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+              <img src="./images/ticket.svg" alt="Filled Ticket" class="w-[150px]">
+            </div>
+          </div>
+    
+          <!-- Match card 2 - Added match-card class -->
+          <div class="match-card relative group w-full px-2">
+            <!-- Main card with animated hover effect -->
+            <div class="relative w-full md:h-[270px] rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+              <!-- Base background image -->
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('./images/matchcard2.svg')] transition-all duration-500 ease-in-out">
+              </div>
+    
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('https://uzairkhan-12.github.io/applab-task/images/matchCard222.png')] translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+              </div>
+    
+              <div
+                class="absolute inset-0 border-2 border-[#6D5F7D] opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-in-out rounded-lg pointer-events-none z-10">
+              </div>
+    
+              <!-- Card content -->
+              <div class="relative z-20">
+                <div
+                  class="bg-white mx-auto border-t border-[#2F1A45] px-2 w w-[176px] h-[32px] flex gap-x-1 items-center rounded-b-lg">
+                  <img src="./images/calendar.svg" alt="Calendar">
+                  <p class="text-black text-sm font-thin"> Saturday, May 12th</p>
+                </div>
+                <div class="flex mt-5 mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <img src="./images/umm.svg" alt="Team 1">
+                  <p class="min-h-10 min-w-10 flex items-center justify-center rounded-full text-red-500 bg-white">
+                    VS</p>
+                  <img src="./images/duhail.svg" alt="Team 2">
+                </div>
+                <div
+                  class="flex text-black font-bold group-hover:text-white mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <p>Umm Salal SC</p>
+                  <p>Al-Duhail SC</p>
+                </div>
+                <div class="flex mt-6 pt-6 md:pb-0 pb-2 text-black gap-x-2 mt-2 text-black items-center justify-center">
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">10</p>
+                  <p>:</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">00</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2">PM</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Ticket image moved outside the card but still part of the group -->
+           <div
+              class="opacity-0 justify-center mx-auto flex mt-4 translate-y-[-20%] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+              <img src="./images/ticket.svg" alt="Filled Ticket" class="w-[150px]">
+            </div>
+          </div>
+    
+          <!-- Match card 3 - Added match-card class -->
+          <div class="match-card relative group w-full px-2">
+            <!-- Main card with animated hover effect -->
+            <div class="relative w-full md:h-[270px] rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+              <!-- Base background image -->
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('./images/matchcard2.svg')] transition-all duration-500 ease-in-out">
+              </div>
+    
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('https://uzairkhan-12.github.io/applab-task/images/matchCard222.png')] translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+              </div>
+    
+              <div
+                class="absolute inset-0 border-2 border-[#6D5F7D] opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-in-out rounded-lg pointer-events-none z-10">
+              </div>
+    
+              <!-- Card content -->
+              <div class="relative z-20">
+                <div
+                  class="bg-white mx-auto border-t border-[#2F1A45] px-2 w w-[176px] h-[32px] flex gap-x-1 items-center rounded-b-lg">
+                  <img src="./images/calendar.svg" alt="Calendar">
+                  <p class="text-black text-sm font-thin"> Saturday, May 12th</p>
+                </div>
+                <div class="flex mt-5 mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <img src="./images/umm.svg" alt="Team 1">
+                  <p class="min-h-10 min-w-10 flex items-center justify-center rounded-full text-red-500 bg-white">
+                    VS</p>
+                  <img src="./images/duhail.svg" alt="Team 2">
+                </div>
+                <div
+                  class="flex text-black font-bold group-hover:text-white mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <p>Umm Salal SC</p>
+                  <p>Al-Duhail SC</p>
+                </div>
+                <div class="flex mt-6 pt-6 md:pb-0 pb-2 text-black gap-x-2 mt-2 text-black items-center justify-center">
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">10</p>
+                  <p>:</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">00</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2">PM</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Ticket image moved outside the card but still part of the group -->
+           <div
+              class="opacity-0 justify-center mx-auto flex mt-4 translate-y-[-20%] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+              <img src="./images/ticket.svg" alt="Filled Ticket" class="w-[150px]">
+            </div>
+          </div>
+    
+          <!-- Match card 4 - Added match-card class -->
+          <div class="match-card relative group w-full px-2">
+            <!-- Main card with animated hover effect -->
+            <div class="relative w-full md:h-[270px] rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+              <!-- Base background image -->
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('./images/matchcard2.svg')] transition-all duration-500 ease-in-out">
+              </div>
+    
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('https://uzairkhan-12.github.io/applab-task/images/matchCard222.png')] translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+              </div>
+    
+              <div
+                class="absolute inset-0 border-2 border-[#6D5F7D] opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-in-out rounded-lg pointer-events-none z-10">
+              </div>
+    
+              <!-- Card content -->
+              <div class="relative z-20">
+                <div
+                  class="bg-white mx-auto border-t border-[#2F1A45] px-2 w w-[176px] h-[32px] flex gap-x-1 items-center rounded-b-lg">
+                  <img src="./images/calendar.svg" alt="Calendar">
+                  <p class="text-black text-sm font-thin"> Saturday, May 12th</p>
+                </div>
+                <div class="flex mt-5 mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <img src="./images/umm.svg" alt="Team 1">
+                  <p class="min-h-10 min-w-10 flex items-center justify-center rounded-full text-red-500 bg-white">
+                    VS</p>
+                  <img src="./images/duhail.svg" alt="Team 2">
+                </div>
+                <div
+                  class="flex text-black font-bold group-hover:text-white mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <p>Umm Salal SC</p>
+                  <p>Al-Duhail SC</p>
+                </div>
+                <div class="flex mt-6 pt-6 md:pb-0 pb-2 text-black gap-x-2 mt-2 text-black items-center justify-center">
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">10</p>
+                  <p>:</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">00</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2">PM</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Ticket image moved outside the card but still part of the group -->
+           <div
+              class="opacity-0 justify-center mx-auto flex mt-4 translate-y-[-20%] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+              <img src="./images/ticket.svg" alt="Filled Ticket" class="w-[150px]">
+            </div>
+          </div>
+          <div class="match-card relative group w-full px-2">
+            <!-- Main card with animated hover effect -->
+            <div class="relative w-full md:h-[270px] rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+              <!-- Base background image -->
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('./images/matchcard2.svg')] transition-all duration-500 ease-in-out">
+              </div>
+    
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('https://uzairkhan-12.github.io/applab-task/images/matchCard222.png')] translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+              </div>
+    
+              <div
+                class="absolute inset-0 border-2 border-[#6D5F7D] opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-in-out rounded-lg pointer-events-none z-10">
+              </div>
+    
+              <!-- Card content -->
+              <div class="relative z-20">
+                <div
+                  class="bg-white mx-auto border-t border-[#2F1A45] px-2 w w-[176px] h-[32px] flex gap-x-1 items-center rounded-b-lg">
+                  <img src="./images/calendar.svg" alt="Calendar">
+                  <p class="text-black text-sm font-thin"> Saturday, May 12th</p>
+                </div>
+                <div class="flex mt-5 mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <img src="./images/umm.svg" alt="Team 1">
+                  <p class="min-h-10 min-w-10 flex items-center justify-center rounded-full text-red-500 bg-white">
+                    VS</p>
+                  <img src="./images/duhail.svg" alt="Team 2">
+                </div>
+                <div
+                  class="flex text-black font-bold group-hover:text-white mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <p>Umm Salal SC</p>
+                  <p>Al-Duhail SC</p>
+                </div>
+                <div class="flex mt-6 pt-6 md:pb-0 pb-2 text-black gap-x-2 mt-2 text-black items-center justify-center">
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">10</p>
+                  <p>:</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">00</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2">PM</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Ticket image moved outside the card but still part of the group -->
+           <div
+              class="opacity-0 justify-center mx-auto flex mt-4 translate-y-[-20%] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+              <img src="./images/ticket.svg" alt="Filled Ticket" class="w-[150px]">
+            </div>
+          </div>
+          <div class="match-card relative group w-full px-2">
+            <!-- Main card with animated hover effect -->
+            <div class="relative w-full md:h-[270px] rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+              <!-- Base background image -->
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('./images/matchcard2.svg')] transition-all duration-500 ease-in-out">
+              </div>
+    
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('https://uzairkhan-12.github.io/applab-task/images/matchCard222.png')] translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+              </div>
+    
+              <div
+                class="absolute inset-0 border-2 border-[#6D5F7D] opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-in-out rounded-lg pointer-events-none z-10">
+              </div>
+    
+              <!-- Card content -->
+              <div class="relative z-20">
+                <div
+                  class="bg-white mx-auto border-t border-[#2F1A45] px-2 w w-[176px] h-[32px] flex gap-x-1 items-center rounded-b-lg">
+                  <img src="./images/calendar.svg" alt="Calendar">
+                  <p class="text-black text-sm font-thin"> Saturday, May 12th</p>
+                </div>
+                <div class="flex mt-5 mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <img src="./images/umm.svg" alt="Team 1">
+                  <p class="min-h-10 min-w-10 flex items-center justify-center rounded-full text-red-500 bg-white">
+                    VS</p>
+                  <img src="./images/duhail.svg" alt="Team 2">
+                </div>
+                <div
+                  class="flex text-black font-bold group-hover:text-white mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <p>Umm Salal SC</p>
+                  <p>Al-Duhail SC</p>
+                </div>
+                <div class="flex mt-6 pt-6 md:pb-0 pb-2 text-black gap-x-2 mt-2 text-black items-center justify-center">
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">10</p>
+                  <p>:</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">00</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2">PM</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Ticket image moved outside the card but still part of the group -->
+           <div
+              class="opacity-0 justify-center mx-auto flex mt-4 translate-y-[-20%] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+              <img src="./images/ticket.svg" alt="Filled Ticket" class="w-[150px]">
+            </div>
+          </div>
+          <div class="match-card relative group w-full px-2">
+            <!-- Main card with animated hover effect -->
+            <div class="relative w-full md:h-[270px] rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+              <!-- Base background image -->
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('./images/matchcard2.svg')] transition-all duration-500 ease-in-out">
+              </div>
+    
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('https://uzairkhan-12.github.io/applab-task/images/matchCard222.png')] translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+              </div>
+    
+              <div
+                class="absolute inset-0 border-2 border-[#6D5F7D] opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-in-out rounded-lg pointer-events-none z-10">
+              </div>
+    
+              <!-- Card content -->
+              <div class="relative z-20">
+                <div
+                  class="bg-white mx-auto border-t border-[#2F1A45] px-2 w w-[176px] h-[32px] flex gap-x-1 items-center rounded-b-lg">
+                  <img src="./images/calendar.svg" alt="Calendar">
+                  <p class="text-black text-sm font-thin"> Saturday, May 12th</p>
+                </div>
+                <div class="flex mt-5 mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <img src="./images/umm.svg" alt="Team 1">
+                  <p class="min-h-10 min-w-10 flex items-center justify-center rounded-full text-red-500 bg-white">
+                    VS</p>
+                  <img src="./images/duhail.svg" alt="Team 2">
+                </div>
+                <div
+                  class="flex text-black font-bold group-hover:text-white mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <p>Umm Salal SC</p>
+                  <p>Al-Duhail SC</p>
+                </div>
+                <div class="flex mt-6 pt-6 md:pb-0 pb-2 text-black gap-x-2 mt-2 text-black items-center justify-center">
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">10</p>
+                  <p>:</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">00</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2">PM</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Ticket image moved outside the card but still part of the group -->
+           <div
+              class="opacity-0 justify-center mx-auto flex mt-4 translate-y-[-20%] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+              <img src="./images/ticket.svg" alt="Filled Ticket" class="w-[150px]">
+            </div>
+          </div>
+          <div class="match-card relative group w-full px-2">
+            <!-- Main card with animated hover effect -->
+            <div class="relative w-full md:h-[270px] rounded-lg overflow-hidden transition-all duration-500 ease-in-out">
+              <!-- Base background image -->
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('./images/matchcard2.svg')] transition-all duration-500 ease-in-out">
+              </div>
+    
+              <div
+                class="absolute inset-0 bg-center bg-cover bg-[url('https://uzairkhan-12.github.io/applab-task/images/matchCard222.png')] translate-y-full group-hover:translate-y-0 transition-all duration-700 ease-in-out">
+              </div>
+    
+              <div
+                class="absolute inset-0 border-2 border-[#6D5F7D] opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700 ease-in-out rounded-lg pointer-events-none z-10">
+              </div>
+    
+              <!-- Card content -->
+              <div class="relative z-20">
+                <div
+                  class="bg-white mx-auto border-t border-[#2F1A45] px-2 w w-[176px] h-[32px] flex gap-x-1 items-center rounded-b-lg">
+                  <img src="./images/calendar.svg" alt="Calendar">
+                  <p class="text-black text-sm font-thin"> Saturday, May 12th</p>
+                </div>
+                <div class="flex mt-5 mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <img src="./images/umm.svg" alt="Team 1">
+                  <p class="min-h-10 min-w-10 flex items-center justify-center rounded-full text-red-500 bg-white">
+                    VS</p>
+                  <img src="./images/duhail.svg" alt="Team 2">
+                </div>
+                <div
+                  class="flex text-black font-bold group-hover:text-white mx-auto justify-between items-center px-4 xl:px-[50px]">
+                  <p>Umm Salal SC</p>
+                  <p>Al-Duhail SC</p>
+                </div>
+                <div class="flex mt-6 pt-6 md:pb-0 pb-2 text-black gap-x-2 mt-2 text-black items-center justify-center">
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">10</p>
+                  <p>:</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2 px-2.5">00</p>
+                  <p class="border border-[#DDBFE7] font-semibold rounded-lg p-2">PM</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Ticket image moved outside the card but still part of the group -->
+           <div
+              class="opacity-0 justify-center mx-auto flex mt-4 translate-y-[-20%] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+              <img src="./images/ticket.svg" alt="Filled Ticket" class="w-[150px]">
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+    <section class="md:px-6 px-2 container mx-auto">
+      <p class="text-red-500 text-start">/ NEWS &amp; UPDATES</p>
+      <div class="lg:flex flex-row items-center">
+        <h1 class="text-3xl md:w-1/2 mt-5 flex flex-col xl:text-5xl text-start gap-y-2 md:mb-10 font-bold">
+          <span class="text-outline text-white">LATEST</span>
+          <span class="text-[#2f1a45]">NEWS &amp; UPDATES</span>
+        </h1>
+        <div class="flex flex-col font-thin text-start lg:flex-row md:gap-10 gap-4 items-start lg:items-center">
+          <p>Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor pulvinar orci elementum nulla nunc. A
+            diam
+            quam et at viverra et.</p>
+          <a href="#" class="underline cursor-pointer inline whitespace-nowrap font-semibold">View all</a>
+          <div class="flex items-center md:justify-none justify-end md:w-auto w-full md:pb-auto pb-4 gap-x-4">
+            <button id="prevButton"
+              class="w-10 h-10 flex items-center justify-center border-2 border-[#8c0321] text-[#8c0321] rounded-full text-xl font-bold">
+              <img src="./images/left-arrow.svg" alt="left">
+            </button>
+
+            <button id="nextButton"
+              class="w-10 h-10 flex items-center justify-center border-2 bg-[#8c0321] border-[#8c0321] text-white rounded-full text-xl font-bold">
+              <img src="./images/right-arrow.svg" alt="right">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative container mx-auto overflow-hidden">
+        <div id="carousel-track" class="flex gap-4 transition-transform duration-500 ease-in-out">
+          <div class="news-card min-w-full sm:min-w-[90%] md:min-w-[49%] lg:min-w-[32%]">
+            <div
+              class="bg-white border border-gray-300 rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg h-full">
+              <div class="relative overflow-hidden">
+                <img src="images/Component 11.svg" alt="Qatar football celebration"
+                  class="w-full transition-transform duration-700 transform hover:scale-150">
+              </div>
+              <div class="p-4">
+                <div class="flex items-center text-sm mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                  <span class="text-thin">Saturday, May 12th</span>
+                </div>
+                <h2 class="font-bold text-xl text-start">Japan Books Ticket to AFC U17 Asian Cup 2025 Finals, Seals
+                  Group F Top
+                  Spot</h2>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span
+                    class="px-3 py-1 border rounded-full rounded-full text-xs font-bold border-black cursor-pointer">REFEREES</span>
+                  <span
+                    class="px-3 py-1 border rounded-full rounded-full text-xs font-bold border-black cursor-pointer">FOOTBALL
+                    DEVELOPMENT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="news-card min-w-full sm:min-w-[90%] md:min-w-[48%] lg:min-w-[32%]">
+            <div
+              class="bg-white border border-gray-300 rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg h-full">
+              <div class="relative overflow-hidden">
+                <img src="images/Component 11.svg" alt="Qatar football celebration"
+                  class="w-full transition-transform duration-700 transform hover:scale-150">
+              </div>
+              <div class="p-4">
+                <div class="flex items-center text-sm mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                  <span class="text-thin">Saturday, May 12th</span>
+                </div>
+                <h2 class="font-bold text-xl text-start">Japan Books Ticket to AFC U17 Asian Cup 2025 Finals, Seals
+                  Group F Top
+                  Spot</h2>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span
+                    class="px-3 py-1 border rounded-full rounded-full text-xs font-bold border-black cursor-pointer">REFEREES</span>
+                  <span
+                    class="px-3 py-1 border rounded-full rounded-full text-xs font-bold border-black cursor-pointer">FOOTBALL
+                    DEVELOPMENT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="news-card min-w-full sm:min-w-[90%] md:min-w-[48%] lg:min-w-[32%]">
+            <div
+              class="bg-white border border-gray-300 rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg h-full">
+              <div class="relative overflow-hidden">
+                <img src="images/Component 11.svg" alt="Qatar football celebration"
+                  class="w-full transition-transform duration-700 transform hover:scale-150">
+              </div>
+              <div class="p-4">
+                <div class="flex items-center text-sm mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                  <span class="text-thin">Saturday, May 12th</span>
+                </div>
+                <h2 class="font-bold text-xl text-start">Japan Books Ticket to AFC U17 Asian Cup 2025 Finals, Seals
+                  Group F Top
+                  Spot</h2>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span
+                    class="px-3 py-1 border rounded-full rounded-full text-xs font-bold border-black cursor-pointer">REFEREES</span>
+                  <span
+                    class="px-3 py-1 border rounded-full rounded-full text-xs font-bold border-black cursor-pointer">FOOTBALL
+                    DEVELOPMENT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-card min-w-full sm:min-w-[90%] md:min-w-[48%] lg:min-w-[32%]">
+            <div
+              class="bg-white border border-gray-300 rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg h-full">
+              <div class="relative overflow-hidden">
+                <img src="images/Component 11.svg" alt="Qatar football celebration"
+                  class="w-full transition-transform duration-700 transform hover:scale-150">
+              </div>
+              <div class="p-4">
+                <div class="flex items-center text-sm mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                  <span class="text-thin">Saturday, May 12th</span>
+                </div>
+                <h2 class="font-bold text-xl text-start">Japan Books Ticket to AFC U17 Asian Cup 2025 Finals, Seals
+                  Group F Top
+                  Spot</h2>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span
+                    class="px-3 py-1 border rounded-full rounded-full text-xs font-bold border-black cursor-pointer">REFEREES</span>
+                  <span
+                    class="px-3 py-1 border rounded-full rounded-full text-xs font-bold border-black cursor-pointer">FOOTBALL
+                    DEVELOPMENT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-card min-w-full sm:min-w-[90%] md:min-w-[48%] lg:min-w-[32%]">
+            <div
+              class="bg-white border border-gray-300 rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg h-full">
+              <div class="relative overflow-hidden">
+                <img src="images/Component 11.svg" alt="Qatar football celebration"
+                  class="w-full transition-transform duration-700 transform hover:scale-150">
+              </div>
+              <div class="p-4">
+                <div class="flex items-center text-sm mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                  <span class="text-thin">Saturday, May 12th</span>
+                </div>
+                <h2 class="font-bold text-xl text-start">Japan Books Ticket to AFC U17 Asian Cup 2025 Finals, Seals
+                  Group F Top
+                  Spot</h2>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span
+                    class="px-3 py-1 border rounded-full rounded-full text-xs font-bold border-black cursor-pointer">REFEREES</span>
+                  <span
+                    class="px-3 py-1 border rounded-full rounded-full text-xs font-bold border-black cursor-pointer">FOOTBALL
+                    DEVELOPMENT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-card min-w-full sm:min-w-[90%] md:min-w-[48%] lg:min-w-[32%]">
+            <div
+              class="bg-white border border-gray-300 rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg h-full">
+              <div class="relative overflow-hidden">
+                <img src="images/Component 11.svg" alt="Qatar football celebration"
+                  class="w-full transition-transform duration-700 transform hover:scale-150">
+              </div>
+              <div class="p-4">
+                <div class="flex items-center text-sm mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                  <span class="text-thin">Saturday, May 12th</span>
+                </div>
+                <h2 class="font-bold text-xl text-start">Japan Books Ticket to AFC U17 Asian Cup 2025 Finals, Seals
+                  Group F Top
+                  Spot</h2>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span
+                    class="px-3 py-1 border rounded-full rounded-full text-xs font-bold border-black cursor-pointer">REFEREES</span>
+                  <span
+                    class="px-3 py-1 border rounded-full rounded-full text-xs font-bold border-black cursor-pointer">FOOTBALL
+                    DEVELOPMENT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- You can add more cards here if needed -->
+
+        </div>
+      </div>
+    </section>
+    <!-- what we are -->
+    <section>
+      <div class="w-full md:mt-16 mt-6 w-full overflow-hidden">
+
+        <div class="relative  w-full h-[500px] md:h-80 lg:h-96 xl:h-[428px]"
+          style="background-image: url('images/footballinQBG.png'); background-size: cover; background-position: center;">
+          <div class="absolute container mx-auto inset-0 flex md:flex-row flex-col">
+            <div class="w-full md:w-1/2 p-4 md:p-6 lg:p-8 flex flex-col justify-center">
+              <div class="text-white flex flex-col gap-3">
+                <p class="text-xs text-[#F26522] text-start md:text-sm lg:text-base opacity-80 uppercase">/ What we are
+                </p>
+                <h2 class="text-xl md:text-2xl text-start lg:text-4xl xl:text-5xl font-bold mt-2 mb-4">
+                  <span class="text-football-in-qtr">FOOTBALL</span>
+                  <span class="text-white"> IN QATAR</span>
+                </h2>
+                <p class="text-xl text-start max-w-md mb-6">
+                  Lorem ipsum dolor sit amet consectetur. Vestibulum metus non
+                </p>
+                <div class="flex cursor-pointer bg-white rounded-lg w-fit items-center">
+                  <button
+                    class="border-r-gray-400 border-2 rounded-lg text-[#2F1A45] text-xs md:text-sm py-2 px-4 rounded-sm flex items-center space-x-2 w-max transition">
+                    <span class="font-bold">KNOW MORE</span>
+                  </button>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 mx-3 w-4" fill="none" viewBox="0 0 24 24"
+                    stroke="black">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full md:w-1/2 p-4 md:p-6 lg:p-8 xl:p-12 flex flex-col justify-center items-start ">
+              <div class="text-white">
+                <div class="flex items-center mb-3">
+                  <img src="images/book.svg" alt="book">
+                  <h3 class="ml-3 text-lg md:text-xl lg:text-2xl font-bold">RULES &amp; REGULATIONS</h3>
+                </div>
+                <p class="text-lg text-start  max-w-md mb-6">
+                  Lorem ipsum dolor sit amet consectetur. Vestibulum metus non
+                </p>
+                <button class="text-white w-full text-start underline font-bold uppercase">
+                  LEARN MORE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-8 md:mt-16 md:px-6 container mx-auto px-2" id="football-ranking">
+      <div class="bg-[url('./images/table-bg.svg')] bg-conver bg-center bg-no-repeat lg:px-20 lg:py-12">
+        <h2 class="text-[#F26522] font-thin md:px-6 px-2 flex items-center gap-2">
+          / TEAM TABLE
+        </h2>
+        <h1 class="text-3xl mt-2 flex md:px-6 px-2 flex-row flex-wrap gap-x-2 lg:text-5xl mb-10 font-bold">
+          <span class="text-outline text-white">FOOTBALL </span>
+          <span class="text-[#2f1a45]"> RANKING</span>
+        </h1>
+        <div class="mx-auto rounded-lg container">
+          <div class="flex flex-wrap">
+            <button
+              class="tab-btn p-4 text-sm font-medium text-white text-[#143642] bg-[#2F1A45] rounded-t-lg flex-grow sm:flex-grow-0"
+              data-tab="fifa">FIFA WORLD RANKING</button>
+            <button
+              class="tab-btn p-4 text-sm font-medium text-[#143642] rounded-t-lg flex-grow sm:flex-grow-0"
+              data-tab="asian">ASIAN TEAMS RANKING</button>
+            <button
+              class="tab-btn p-4 text-sm font-medium text-[#143642] rounded-t-lg flex-grow sm:flex-grow-0"
+              data-tab="ooredoo">OOREDOO STARS LEAGUE</button>
+          </div>
+
+          <div class="overflow-x-auto rounded-md max-w-full bg-cover p-4 bg-[url('./images/bg-img.png')]">
+            <table id="fifa-table" class="w-full border-separate border-spacing-y-2">
+              <thead>
+                <tr class="relative  bg-white rounded-t-md">
+                  <th class="py-8 px-2 ">POSITION</th>
+                  <th class="py-8 px-2 text-start px-8">TEAM</th>
+                  <th class="py-8 px-2  ">POINTS</th>
+                  <th class="py-8 px-2  ">PREVIOUS POINTS</th>
+                  <th class="py-8 px-2">RECENT MATCHES</th>
+                </tr>
+              </thead>
+              <tbody >
+                <tr class="w-full rounded-full">
+                  <td class="text-center text-lg font-thin [#899AA0] ">01</td>
+                  <td class="text-center">
+                    <div class="flex items-center justify-start gap-2">
+                      <img src="./images/argentina.svg" /> <span class="font-medium">Argentina</span>
+                      <span class="text-[#15AA9C] font-bold text-xs flex"><img src="./images/Vector 2.svg" /> +3</span>
+                    </div>
+                  </td>
+                  <td class="text-center prv-point h-full">
+                    <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                  </td>
+                  <td class="text-center prv-point h-full">
+                    <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                  </td>
+                  <td >
+                    <div class="flex justify-center space-x-3">
+                      <span
+                        class="h-6 w-6 rounded-full bg-[#15AA9C] flex items-center justify-center text-white text-xs">W</span>
+                      <span
+                        class="h-6 w-6 rounded-full bg-[#CC1A44] flex items-center justify-center text-white text-xs">L</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="w-full rounded-full">
+                  <td class="text-center text-lg font-thin [#899AA0] ">02</td>
+                  <td class="text-center">
+                    <div class="flex items-center justify-start gap-2">
+                      <img src="./images/france.svg" /> <span class="font-medium">France</span>
+                      <span class="text-[#CC1A44] font-bold text-xs flex"><img src="./images/bg-vector.svg" /> +3</span>
+                    </div>
+                  </td>
+                  <td class="text-center prv-point h-full">
+                    <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                  </td>
+                  <td class="text-center prv-point h-full">
+                    <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                  </td>
+                  <td >
+                    <div class="flex justify-center space-x-3">
+                      <span class="h-6 w-6 rounded-full bg-[#15AA9C] flex items-center justify-center text-white text-xs">W</span>
+                      <span class="h-6 w-6 rounded-full bg-[#CC1A44] flex items-center justify-center text-white text-xs">L</span>
+                    </div>
+                  </td>
+                </tr>
+                  <tr class="w-full rounded-full">
+                    <td class="text-center text-lg font-thin [#899AA0] ">03</td>
+                    <td class="text-center">
+                      <div class="flex items-center justify-start gap-2">
+                        <img src="./images/argentina.svg" /> <span class="font-medium">Argentina</span>
+                        <span class="text-[#15AA9C] font-bold text-xs flex"><img src="./images/Vector 2.svg" /> +3</span>
+                      </div>
+                    </td>
+                    <td class="text-center prv-point h-full">
+                      <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                    </td>
+                    <td class="text-center prv-point h-full">
+                      <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                    </td>
+                    <td >
+                      <div class="flex justify-center space-x-3">
+                        <span class="h-6 w-6 rounded-full bg-[#15AA9C] flex items-center justify-center text-white text-xs">W</span>
+                        <span class="h-6 w-6 rounded-full bg-[#CC1A44] flex items-center justify-center text-white text-xs">L</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="w-full rounded-full">
+                    <td class="text-center text-lg font-thin [#899AA0] ">04</td>
+                    <td class="text-center">
+                      <div class="flex items-center justify-start gap-2">
+                        <img src="./images/france.svg" /> <span class="font-medium">France</span>
+                        <span class="text-[#CC1A44] font-bold text-xs flex"><img src="./images/bg-vector.svg" /> +3</span>
+                      </div>
+                    </td>
+                    <td class="text-center prv-point h-full">
+                      <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                    </td>
+                    <td class="text-center prv-point h-full">
+                      <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                    </td>
+                    <td >
+                      <div class="flex justify-center space-x-3">
+                        <span class="h-6 w-6 rounded-full bg-[#15AA9C] flex items-center justify-center text-white text-xs">W</span>
+                        <span class="h-6 w-6 rounded-full bg-[#CC1A44] flex items-center justify-center text-white text-xs">L</span>
+                      </div>
+                    </td>
+                  </tr>
+                    <tr class="w-full rounded-full">
+                      <td class="text-center text-lg font-thin [#899AA0] ">05</td>
+                      <td class="text-center">
+                        <div class="flex items-center justify-start gap-2">
+                          <img src="./images/argentina.svg" /> <span class="font-medium">Argentina</span>
+                          <span class="text-[#15AA9C] font-bold text-xs flex"><img src="./images/Vector 2.svg" /> +3</span>
+                        </div>
+                      </td>
+                      <td class="text-center prv-point h-full">
+                        <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                      </td>
+                      <td class="text-center prv-point h-full">
+                        <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                      </td>
+                      <td >
+                        <div class="flex justify-center space-x-3">
+                          <span class="h-6 w-6 rounded-full bg-[#15AA9C] flex items-center justify-center text-white text-xs">W</span>
+                          <span class="h-6 w-6 rounded-full bg-[#CC1A44] flex items-center justify-center text-white text-xs">L</span>
+                        </div>
+                      </td>
+                    </tr>
+                   
+              </tbody>
+            </table>
+
+            <!-- Asian Teams Ranking Table (Initially Hidden) -->
+            <table id="asian-table" class="w-full border-separate hidden border-spacing-y-2">
+              <thead>
+                <tr class="relative  bg-white rounded-t-md">
+                  <th class="py-8 px-2 ">POSITION</th>
+                  <th class="py-8 px-2 text-start px-8">Club</th>
+                  <th class="py-8 px-2  ">MATCHES</th>
+                  <th class="py-8 px-2  "> POINTS</th>
+            
+                </tr>
+              </thead>
+              <tbody >
+                <tr class="w-full rounded-full">
+                  <td class="text-center text-lg font-thin [#899AA0] ">01</td>
+                  <td class="text-center">
+                    <div class="flex items-center justify-start gap-2">
+                      <img src="./images/argentina.svg" /> <span class="font-medium">Argentina</span>
+                      <span class="text-[#15AA9C] font-bold text-xs flex"><img src="./images/Vector 2.svg" /></span>
+                    </div>
+                  </td>
+                  <td class="text-center prv-point h-full">
+                    <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                  </td>
+                  <td class="text-center prv-point h-full">
+                    <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                  </td>
+            
+                </tr>
+                <tr class="w-full rounded-full">
+                  <td class="text-center text-lg font-thin [#899AA0] ">02</td>
+                  <td class="text-center">
+                    <div class="flex items-center justify-start gap-2">
+                      <img src="./images/france.svg" /> <span class="font-medium">France</span>
+                      <span class="text-[#CC1A44] font-bold text-xs flex"><img src="./images/bg-vector.svg" /></span>
+                    </div>
+                  </td>
+                  <td class="text-center prv-point h-full">
+                    <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                  </td>
+                  <td class="text-center prv-point h-full">
+                    <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                  </td>
+            
+                </tr>
+                <tr class="w-full rounded-full">
+                  <td class="text-center text-lg font-thin [#899AA0] ">03</td>
+                  <td class="text-center">
+                    <div class="flex items-center justify-start gap-2">
+                      <img src="./images/argentina.svg" /> <span class="font-medium">Argentina</span>
+                      <span class="text-[#15AA9C] font-bold text-xs flex"><img src="./images/Vector 2.svg" /></span>
+                    </div>
+                  </td>
+                  <td class="text-center prv-point h-full">
+                    <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                  </td>
+                  <td class="text-center prv-point h-full">
+                    <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                  </td>
+            
+                </tr>
+                <tr class="w-full rounded-full">
+                  <td class="text-center text-lg font-thin [#899AA0] ">04</td>
+                  <td class="text-center">
+                    <div class="flex items-center justify-start gap-2">
+                      <img src="./images/france.svg" /> <span class="font-medium">France</span>
+                      <span class="text-[#CC1A44] font-bold text-xs flex"><img src="./images/bg-vector.svg" /></span>
+                    </div>
+                  </td>
+                  <td class="text-center prv-point h-full">
+                    <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                  </td>
+                  <td class="text-center prv-point h-full">
+                    <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                  </td>
+            
+                </tr>
+                <tr class="w-full rounded-full">
+                  <td class="text-center text-lg font-thin [#899AA0] ">05</td>
+                  <td class="text-center">
+                    <div class="flex items-center justify-start gap-2">
+                      <img src="./images/argentina.svg" /> <span class="font-medium">Argentina</span>
+                      <span class="text-[#15AA9C] font-bold text-xs flex"><img src="./images/Vector 2.svg" /></span>
+                    </div>
+                  </td>
+                  <td class="text-center prv-point h-full">
+                    <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                  </td>
+                  <td class="text-center prv-point h-full">
+                    <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                  </td>
+            
+                </tr>
+            
+              </tbody>
+            </table>
+
+            <!-- Ooredoo Stars League Table (Initially Hidden) -->
+            <table id="ooredoo-table" class="w-full border-separate hidden border-spacing-y-2">
+            
+                <thead>
+                  <tr class="relative  bg-white rounded-t-md">
+                    <th class="py-8 px-2 ">POSITION</th>
+                    <th class="py-8 px-2 text-start px-8">Club</th>
+                    <th class="py-8 px-2  ">MATCHES</th>
+                    <th class="py-8 px-2  "> POINTS</th>
+              
+                  </tr>
+                </thead>
+                <tbody >
+                  <tr class="w-full rounded-full">
+                    <td class="text-center text-lg font-thin [#899AA0] ">01</td>
+                    <td class="text-center">
+                      <div class="flex items-center justify-start gap-2">
+                        <img src="./images/argentina.svg" /> <span class="font-medium">Argentina</span>
+                        <span class="text-[#15AA9C] font-bold text-xs flex"><img src="./images/Vector 2.svg" /></span>
+                      </div>
+                    </td>
+                    <td class="text-center prv-point h-full">
+                      <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                    </td>
+                    <td class="text-center prv-point h-full">
+                      <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                    </td>
+              
+                  </tr>
+                  <tr class="w-full rounded-full">
+                    <td class="text-center text-lg font-thin [#899AA0] ">02</td>
+                    <td class="text-center">
+                      <div class="flex items-center justify-start gap-2">
+                        <img src="./images/france.svg" /> <span class="font-medium">France</span>
+                        <span class="text-[#CC1A44] font-bold text-xs flex"><img src="./images/bg-vector.svg" /></span>
+                      </div>
+                    </td>
+                    <td class="text-center prv-point h-full">
+                      <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                    </td>
+                    <td class="text-center prv-point h-full">
+                      <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                    </td>
+              
+                  </tr>
+                  <tr class="w-full rounded-full">
+                    <td class="text-center text-lg font-thin [#899AA0] ">03</td>
+                    <td class="text-center">
+                      <div class="flex items-center justify-start gap-2">
+                        <img src="./images/argentina.svg" /> <span class="font-medium">Argentina</span>
+                        <span class="text-[#15AA9C] font-bold text-xs flex"><img src="./images/Vector 2.svg" /></span>
+                      </div>
+                    </td>
+                    <td class="text-center prv-point h-full">
+                      <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                    </td>
+                    <td class="text-center prv-point h-full">
+                      <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                    </td>
+              
+                  </tr>
+                  <tr class="w-full rounded-full">
+                    <td class="text-center text-lg font-thin [#899AA0] ">04</td>
+                    <td class="text-center">
+                      <div class="flex items-center justify-start gap-2">
+                        <img src="./images/france.svg" /> <span class="font-medium">France</span>
+                        <span class="text-[#CC1A44] font-bold text-xs flex"><img src="./images/bg-vector.svg" /></span>
+                      </div>
+                    </td>
+                    <td class="text-center prv-point h-full">
+                      <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                    </td>
+                    <td class="text-center prv-point h-full">
+                      <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                    </td>
+              
+                  </tr>
+                  <tr class="w-full rounded-full">
+                    <td class="text-center text-lg font-thin [#899AA0] ">05</td>
+                    <td class="text-center">
+                      <div class="flex items-center justify-start gap-2">
+                        <img src="./images/argentina.svg" /> <span class="font-medium">Argentina</span>
+                        <span class="text-[#15AA9C] font-bold text-xs flex"><img src="./images/Vector 2.svg" /></span>
+                      </div>
+                    </td>
+                    <td class="text-center prv-point h-full">
+                      <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                    </td>
+                    <td class="text-center prv-point h-full">
+                      <p class="bg-[#F4F1F3] w-fit px-3 py-[2px] font-semibold  rounded-full">1883.5</p>
+                    </td>
+              
+                  </tr>
+              
+                </tbody>
+              </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+      <section class="mt-8 pt-4 md:mt-24 border-t container mx-auto md:px-6 px-2" id="twitter-feed-section">
+        <div class="flex justify-between items-center mb-6">
+          <p class="text-[#F26522] font-thin flex items-center gap-2">
+            / TWITTER FEED
+          </p>
+          <div class="flex items-center gap-2">
+          <button id="twitter-prev-btn"
+            class="w-10 h-10 flex items-center justify-center border-2 border-[#8c0321] text-[#8c0321] rounded-full text-xl font-bold">
+            <img src="./images/left-arrow.svg" alt="left">
+          </button>
+          <button id="twitter-next-btn"
+            class="w-10 h-10 flex items-center justify-center border-2 bg-[#8c0321] border-[#8c0321] text-white rounded-full text-xl font-bold">
+            <img src="./images/right-arrow.svg" alt="right">
+          </button>
+          </div>
+        </div>
+
+        <div class="relative overflow-hidden w-full">
+          <div id="twitter-carousel-track" class="flex transition-transform duration-500 ease-in-out">
+            <!-- Card 1 -->
+            <div class="twitter-news-card relative z-4 mx-2">
+              <div class="overflow-hidden pb-4 h-full duration-300">
+                <div class="relative mb-2">
+                  <img src="images/image 48.svg" alt="Football players" class="w-full h-56 rounded-xl object-cover">
+                  <img class="absolute bottom-5 left-5 z-5 cursor-pointer hover:scale-105 transition-all" src="./images/x.svg" />
+                </div>
+      
+                <div>
+                  <p class="text-sm flex flex-row items-center text-start font-medium mb-2">
+                    <span class="text-[#8E2BAF]">#AlAnnabi </span> is ready for tomorrow’s match! 🔥<span><img width="20"
+                        height="20" src="./images/qatart-falg.png" /></span>
+                  <p class="text-[#8E2BAF] text-start text-sm relative -top-2">#Our_Journey_To2026</p>
+                  </p>
+      
+                  <p class="text-xs text-[#899AA0] text-start">
+                    2 hr ago
+                  </p>
+                </div>
+              </div>
+      
+            </div>
+      
+            <div class="twitter-news-card relative z-4">
+              <div class="overflow-hidden pb-4 h-full duration-300">
+                <div class="relative mb-2">
+                  <img src="images/image1.svg" alt="Football players" class="w-full h-56 rounded-xl object-cover">
+                  <img class="absolute bottom-5 left-5 z-5 cursor-pointer hover:scale-105 transition-all" src="./images/x.svg" />
+                </div>
+      
+                <div>
+                  <p class="text-sm flex flex-row items-center text-start font-medium mb-2">
+                    <span class="text-[#8E2BAF]">#AlAnnabi </span> is ready for tomorrow’s match! 🔥<span><img width="20"
+                        height="20" src="./images/qatart-falg.png" /></span>
+                  <p class="text-[#8E2BAF] text-start text-sm relative -top-2">#Our_Journey_To2026</p>
+                  </p>
+      
+                  <p class="text-xs text-[#899AA0] text-start">
+                    2 hr ago
+                  </p>
+                </div>
+              </div>
+      
+            </div>
+            <!-- Card 3 -->
+            <div class="twitter-news-card relative z-4 mx-2">
+              <div class="overflow-hidden pb-4 h-full duration-300">
+                <div class="relative mb-2">
+                  <img src="images/image 48.svg" alt="Football players" class="w-full h-56 rounded-xl object-cover">
+                  <img class="absolute bottom-5 left-5 z-5 cursor-pointer hover:scale-105 transition-all" src="./images/x.svg" />
+                </div>
+      
+                <div>
+                  <p class="text-sm flex flex-row items-center text-start font-medium mb-2">
+                    <span class="text-[#8E2BAF]">#AlAnnabi </span> is ready for tomorrow’s match! 🔥<span><img width="20"
+                        height="20" src="./images/qatart-falg.png" /></span>
+                  <p class="text-[#8E2BAF] text-start text-sm relative -top-2">#Our_Journey_To2026</p>
+                  </p>
+      
+                  <p class="text-xs text-[#899AA0] text-start">
+                    2 hr ago
+                  </p>
+                </div>
+              </div>
+      
+            </div>
+      
+            <!-- Card 4 -->
+            <div class="twitter-news-card relative z-4 mx-2">
+              <div class="overflow-hidden pb-4 h-full duration-300">
+                <div class="relative mb-2">
+                  <img src="images/image2.svg" alt="Football players" class="w-full h-56 rounded-xl object-cover">
+                  <img class="absolute bottom-5 left-5 z-5 cursor-pointer hover:scale-105 transition-all" src="./images/x.svg" />
+                </div>
+      
+                <div>
+                  <p class="text-sm flex flex-row items-center text-start font-medium mb-2">
+                    <span class="text-[#8E2BAF]">#AlAnnabi </span> is ready for tomorrow’s match! 🔥<span><img width="20"
+                        height="20" src="./images/qatart-falg.png" /></span>
+                  <p class="text-[#8E2BAF] text-start text-sm relative -top-2">#Our_Journey_To2026</p>
+                  </p>
+      
+                  <p class="text-xs text-[#899AA0] text-start">
+                    2 hr ago
+                  </p>
+                </div>
+              </div>
+      
+            </div>
+      
+            <!-- Additional cards to ensure there's enough content for scrolling -->
+            <!-- Card 5 -->
+            <div class="twitter-news-card relative z-4 mx-2">
+              <div class="overflow-hidden pb-4 h-full duration-300">
+                <div class="relative mb-2">
+                  <img src="images/image 48.svg" alt="Football players" class="w-full h-56 rounded-xl object-cover">
+                  <img class="absolute bottom-5 left-5 z-5 cursor-pointer hover:scale-105 transition-all" src="./images/x.svg" />
+                </div>
+      
+                <div>
+                  <p class="text-sm flex flex-row items-center text-start font-medium mb-2">
+                    <span class="text-[#8E2BAF]">#AlAnnabi </span> is ready for tomorrow’s match! 🔥<span><img width="20"
+                        height="20" src="./images/qatart-falg.png" /></span>
+                  <p class="text-[#8E2BAF] text-start text-sm relative -top-2">#Our_Journey_To2026</p>
+                  </p>
+      
+                  <p class="text-xs text-[#899AA0] text-start">
+                    2 hr ago
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <div class="container mt-6 mx-auto md:px-6 px-2">
+      <h2 class="text-[#F26522] font-thin flex items-center gap-2">
+        / MEDIA
+      </h2>
+      <div class="flex flex-row items-baseline justify-between">
+        <h1 class="text-3xl mt-5 flex flex-row gap-x-2 lg:text-5xl mb-10 font-bold">
+          <span class="text-outline text-white">IMAGES </span>
+          <span class="text-[#2f1a45]"> &amp; VIDEOS</span>
+        </h1>
+        <a href="#" class="underline cursor-pointer font-semibold inline text-black whitespace-nowrap">View all</a>
+      </div>
+      <div class="grid lg:grid-cols-6 xl:grid-cols-12 gap-2 ">
+        <div class="col-span-12 sm:col-span-6 lg:col-span-3 relative rounded-md overflow-hidden">
+          <img src="./images/image-1.svg" alt="Football celebration" class="w-[458px] h-[331px] object-cover">
+        </div>
+        <div class="col-span-12 sm:col-span-6 md:col-span-3 rounded-md overflow-hidden">
+          <img src="./images/image-2.svg" alt="Fan cheering" class="w-[458px] h-[331px] object-cover">
+        </div>
+        <div class="col-span-6 sm:col-span-3 md:col-span-2 flex flex-col gap-2">
+          <div class="rounded-md overflow-hidden ">
+            <img src="./images/image-3.svg" alt="Player celebration" class="w-full h-[160px] object-cover">
+          </div>
+          <div class="rounded-md overflow-hidden ">
+            <img src="./images/image-4.svg" alt="Football boots" class="w-full h-[160px] object-cover">
+          </div>
+        </div>
+
+        <div class="col-span-6 sm:col-span-3 md:col-span-2 rounded-md overflow-hidden">
+          <img src="./images/image-5.svg" alt="Players on field" class="w-[650px] h-[325px] object-cover">
+        </div>
+
+        <div class="col-span-12 sm:col-span-6 md:col-span-2 rounded-md overflow-hidden">
+          <img src="images/image-6.svg" alt="Track runners" class="w-[650px] h-[325px] object-cover">
+        </div>
+
+
+        <div class="col-span-12 md:col-span-2 rounded-md overflow-hidden">
+          <img src="./images/image-7.svg" alt="Players on field" class="w-[356px] h-[331px] object-cover">
+        </div>
+
+        <div class="col-span-12 md:col-span-4 relative rounded-md overflow-hidden">
+          <img src="./images/image-8.svg" alt="Fan with flag" class="w-full h-[330px] object-cover">
+        </div>
+
+        <div class="col-span-12 sm:col-span-4 md:col-span-2 rounded-md overflow-hidden">
+          <img src="./images/image-9.svg" alt="Track close-up" class="w-full h-[331px] object-cover ">
+        </div>
+
+        <div class="col-span-6 sm:col-span-4 md:col-span-2 rounded-md overflow-hidden">
+          <img src="./images/image-10.svg" alt="Kid celebrating" class="w-full h-[331px] object-cover">
+        </div>
+
+        <div class="col-span-6 sm:col-span-4 md:col-span-2 rounded-md overflow-hidden">
+          <img src="images/image-11.svg" alt="Team photo" class="w-full h-[165px] object-cover">
+          <img src="images/image-12.svg" alt="Team photo" class="w-full h-[165px] object-cover">
+        </div>
+      </div>
+    </div>
+    <footer class="mt-20 bg-[#2F1A45]">
+      <div class="grid grid-cols-1 container mx-auto lg:grid-cols-2">
+        <div class="flex px-6 border-b py-20 border-gray-300 relative flex-col gap-y-10">
+          <div class="w-[151px] h-[50px] bg-[#d9d9d9]"></div>
+          <p class="text-2xl font-thin max-w-md text-start text-white">Lorem ipsum dolor sit amet consectetur.
+            Vestibulum metus non </p>
+          <div class="flex gap-x-2 flex-wrap md:mt-10">
+            <img src="images/instagram.svg" alt="insta">
+            <img src="images/youtube.svg" alt="yt">
+            <img src="images/facebook.svg" alt="fb">
+            <img src="images/twitter.svg" alt="twitter">
+          </div>
+          <img class="absolute opacity-80 bottom-0 -left-[20px]" src="images/ball.png" alt="Fball">
+        </div>
+        <div class=" text-white grid grid-cols-2">
+          <div class="flex border-[1px] border-b-0 p-6 md:p-8 text-start flex-col gap-y-2">
+            <p class="font-bold uppercase">QUICK LINKS</p>
+            <p class="cursor-pointer font-thin">Home</p>
+            <p class="cursor-pointer font-thin">Competitions</p>
+            <p class="cursor-pointer font-thin">Football in Qatar</p>
+            <p class="cursor-pointer font-thin">About Us</p>
+            <p class="cursor-pointer font-thin">Careers</p>
+          </div>
+          <div class="flex p-6 md:p-8 border-r flex-col text-start gap-y-0">
+            <p class="font-bold pb-3 uppercase">location</p>
+            <p class="cursor-pointer font-thin">Al-Bidda Tower,Cornich</p>
+            <p class="cursor-pointer font-thin">
+              Fax: 44754300
+
+            </p>
+            <p class="cursor-pointer font-thin">P.O.Box: 5333</p>
+            <p class="cursor-pointer font-thin">Doha - Qatar</p>
+          </div>
+          <div class="flex border border-r-0 p-6 md:p-8 flex-col text-start gap-y-2">
+            <p class="font-bold uppercase">Privacy & Policy</p>
+            <p class="cursor-pointer font-thin">Term of Use</p>
+            <p class="cursor-pointer font-thin">Privacy policy</p>
+            <p class="cursor-pointer font-thin">Sitemap </p>
+          </div>
+          <div class="flex border p-6 text-start md:p-8 flex-col gap-y-2">
+            <p class="font-bold uppercase">Contact US</p>
+            <p class="cursor-pointer font-thin">Phone: 447544</p>
+            <p class="cursor-pointer font-thin">info@Qfa.Qa</p>
+            <p class="cursor-pointer font-thin">Football in Qatar</p>
+            <p class="cursor-pointer font-thin">About Us</p>
+            <p class="cursor-pointer font-thin">Careers</p>
+          </div>
+        </div>
+      </div>
+      <div class="py-10 md:px-6 px-2 flex flex-col items-center justify-center container mx-auto">
+        <!-- Top row with 6 logos -->
+        <div class="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-x-10 w-full">
+          <img width="200" height="50" src="images/offical-bank.svg" alt="official Bank" class="mx-auto">
+          <img width="200" height="50" src="images/energy-partner.svg" alt="" class="mx-auto">
+          <img width="200" height="50" src="images/qatar.svg" alt="Qatar" class="mx-auto">
+          <img width="200" height="50" src="images/alkaas.svg" alt="Alkaas" class="mx-auto">
+          <img width="200" height="50" src="images/oreedo.svg" alt="Oreedo" class="mx-auto">
+          <img width="200" height="50" src="images/mobile-parnter.svg" alt="Mobile Partner" class="mx-auto">
+        </div>
+
+        <div class="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-x-10 w-full">
+          <div class="col-span-2 md:block hidden"></div>
+          <div class="flex justify-center items-center">
+            <img src="images/talabat.svg" alt="Talabat">
+          </div>
+          <div class="flex justify-center items-center">
+            <img src="images/look.svg" alt="Look">
+          </div>
+          <div class="col-span-2 md:block hidden"></div>
+        </div>
+      </div>
+      <div class="bg-[#8c0321] h-10 flex justify-center items-center">
+        <p class="font-thin opacity-50 text-white">Powered by Qatar Football Association</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/twitterfeeds.js"></script>
+ <script src="js/match.js"></script>
+</body>
+
+</html>
